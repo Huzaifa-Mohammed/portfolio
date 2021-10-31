@@ -16,6 +16,11 @@ header {
     color: white;
     width: 100%;
     padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
 }
 
 header h1 {
@@ -40,14 +45,31 @@ header nav ul {
     align-items: center;
 }
 
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+}
+
 header nav ul li {
     display: inline;
 }
 
 header nav ul li a {
     margin: 0 30px;
+    padding: 10px 15px;
     font-weight: lighter;
     font-size: 22px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+nav ul li a:hover {
+    background-color: rgb(250, 246, 246);
+    color: #010101;
+    border-radius: 17px;
+    text-shadow: none;
 }
 
 footer {
@@ -203,40 +225,137 @@ footer p {
 }
 
 
-/* .card1 {
-    background-image: url(../images/running-img.jpg);
+/* <<<Contact section>>> */
+
+.contact-info-container {
+    padding: 20px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
 }
 
-.card2 {
-    background-image: url(../images/calculator.jpg);
+.contact-info {
+    align-items: center;
+    padding: 15px;
+    margin: 10px 2px;
+    float: right;
 }
 
-.card3 {
-    background-image: url(../images/code-img.jpg);
+.contact-info a {
+    color: white;
+    text-decoration: none;
+    /* border-bottom: 1px solid lightblue; */
 }
 
-.card4 {
-    background-image: url(../images/puzzle-img.jpg);
+.contact-info ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
 }
 
-.card5 {
-    background-image: url(../images/ai-robot-img.jpg);
+.contact-info ul li a {
+    padding: 5px 15px;
+    font-weight: lighter;
+    font-size: 1.5vw;
+    border-bottom: 1px solid lightblue;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.card6 {
-    background-image: url(../images/blog.jpg);
-} */
-
-
-/* .card7 {
-    background-image: url(../images/Ux.jpg);
+.onclick ul li a:hover {
+    background-color: white;
+    color: #010101;
+    border-radius: 17px;
+    text-shadow: none;
 }
 
-.card8 {
-    background-image: url(../images/uxd.jpg);
-} */
 
+/* <<<<Form section>>>> */
 
-/* .card9 {
-    background-image: url(../images/stocks.jpg);
-} */
+.form-body {
+    display: flex;
+    height: 56vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container {
+    max-width: 600px;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+.contact-container .title {
+    font-size: 25px;
+    font-weight: 400;
+    position: relative;
+}
+
+.contact-container .title ::before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 30px;
+}
+
+.contact-container form .user-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .user-info .input-box {
+    margin-bottom: 10px;
+    width: calc(100% / 2-20px);
+}
+
+.user-info .input-box input {
+    height: 35px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    font-size: 12px;
+}
+
+.user-info .input-box details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.button {
+    height: 45px;
+    /* margin: 45px 0; */
+}
+
+.button input {
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border: none;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+form .button input:hover {
+    background-color: rgba(49, 49, 49, 0.986);
+    color: rgb(219, 216, 216);
+    border-radius: 17px;
+    text-shadow: none;
+}
+
+@media screen and (max-width 980px) {
+    .contact-container {
+        max-width: 100%;
+    }
+}
