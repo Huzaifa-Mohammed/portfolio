@@ -71,6 +71,9 @@ footer p {
     color: white;
 }
 
+
+/* <<<<<hero section>>>>>> */
+
 .hero {
     background-image: url(../images/programmer-image.jpg);
     height: 500px;
@@ -84,14 +87,22 @@ footer p {
     padding: 10px;
 }
 
-.info h2 {
+.section-title {
     text-align: center;
-    border-bottom: 1px solid lightblue;
-    width: 50%;
+    border-bottom: 2px solid lightblue;
+    /* border: 2px solid lightblue; */
+    padding: 25px 50px;
     display: inline-block;
-    padding: 25px 15px;
-    margin-left: 300px;
-    margin-right: 100px;
+    /* justify-content: center; */
+}
+
+.section-title h2 {
+    border: 2px solid lightblue;
+    width: 100%;
+    border-radius: 17px;
+    padding: 7px 10px;
+    background-color: rgb(245, 235, 235);
+    color: #080113;
 }
 
 .container {
@@ -135,3 +146,97 @@ footer p {
     width: 45%;
     display: inline;
 }
+
+
+/* <<<<<Projects section>>>>>> */
+
+.project-container {
+    padding: 50px;
+    border-bottom: 2px solid lightblue;
+}
+
+
+/* .work-title {
+    text-align: center;
+    padding: 25px 15px;
+    border-bottom: 2px solid lightblue;
+    justify-content: center;
+} */
+
+.row {
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.row col {
+    flex-basis: 50%;
+}
+
+.card {
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: 1s;
+    box-shadow: 0 0 20px 2px rgba(63, 62, 62, 0.1);
+}
+
+.stock1 {
+    padding-left: 80px;
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 17px;
+}
+
+.card :hover {
+    transform: scale(1.3);
+}
+
+
+/* .card1 {
+    background-image: url(../images/running-img.jpg);
+}
+
+.card2 {
+    background-image: url(../images/calculator.jpg);
+}
+
+.card3 {
+    background-image: url(../images/code-img.jpg);
+}
+
+.card4 {
+    background-image: url(../images/puzzle-img.jpg);
+}
+
+.card5 {
+    background-image: url(../images/ai-robot-img.jpg);
+}
+
+.card6 {
+    background-image: url(../images/blog.jpg);
+} */
+
+
+/* .card7 {
+    background-image: url(../images/Ux.jpg);
+}
+
+.card8 {
+    background-image: url(../images/uxd.jpg);
+} */
+
+
+/* .card9 {
+    background-image: url(../images/stocks.jpg);
+} */
