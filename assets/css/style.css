@@ -349,7 +349,7 @@ form .button input:hover {
     text-shadow: none;
 }
 
-@media screen and (max-width 980px) {
+@media screen and (max-width: 980px) {
     header {
         padding-bottom: 0;
         justify-content: center;
