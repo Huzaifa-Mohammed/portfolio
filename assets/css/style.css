@@ -19,8 +19,8 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: sticky;
-    top: 0;
+    /* position: sticky; */
+    /* top: 0; */
 }
 
 header h1 {
@@ -87,8 +87,6 @@ footer h2 {
 }
 
 footer p {
-    /* float: right; */
-    /* text-align: right; */
     font-size: 25px;
     color: white;
 }
@@ -182,14 +180,6 @@ footer p {
     border-bottom: 2px solid lightblue;
 }
 
-
-/* .work-title {
-    text-align: center;
-    padding: 25px 15px;
-    border-bottom: 2px solid lightblue;
-    justify-content: center;
-} */
-
 .row {
     display: flex;
     height: 88%;
@@ -255,7 +245,6 @@ footer p {
 .contact-info a {
     color: white;
     text-decoration: none;
-    /* border-bottom: 1px solid lightblue; */
 }
 
 .contact-info ul {
@@ -341,7 +330,6 @@ form .user-info .input-box {
 
 .button {
     height: 45px;
-    /* margin: 45px 0; */
 }
 
 .button input {
