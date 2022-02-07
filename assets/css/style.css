@@ -204,7 +204,7 @@ footer p {
     background-position: center;
     background-size: cover;
     transition: 0.5s;
-    box-shadow: 0 0 20px 2px rgba(63, 62, 62, 0.1);
+    /* box-shadow: 0 0 20px 2px rgba(63, 62, 62, 0.1); */
 }
 
 .stock1 {
